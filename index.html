@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasileirão eSports Série A</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Brasileirão eSports">
+    </a>
+  </header>
+
+  <!-- MENÚ LATERAL -->
+  <nav class="side-menu" id="sideMenu">
+    <ul class="menu-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Calendário</a></li>
+      <li><a href="#">Vídeos</a></li>
+      <li><a href="#">Clubes</a></li>
+      <li><a href="#">Zona de dados</a></li>
+      <li><a href="#">A, B, C e D</a></li>
+    </ul>
+    <div class="lang-selector">
+      <a href="index.html" class="active">PT</a>
+      <a href="es/Index.html">ES</a>
+      <a href="en/index.html">EN</a>
+    </div>
+  </nav>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- HERO + CARRUSEL -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="assets/images/hero.png" alt="Brasileirão eSports">
+    </div>
+    <div class="hero-text">
+      <h1>Brasileirão eSports Série A</h1>
+      <p>A liga virtual mais disputada do Brasil</p>
+    </div>
+    <div class="liga-carousel" id="ligaCarousel"></div>
+  </section>
+
+  <!-- NOTÍCIAS -->
+  <section class="news-section">
+    <h2 class="section-title">Notícias</h2>
+    <div class="news-grid">
+      <article class="news-main" id="newsMain"></article>
+      <div class="news-extras" id="newsExtras"></div>
+    </div>
+  </section>
+
+  <!-- COMPETIÇÕES -->
+  <section class="competitions-section">
+    <h2 class="section-title">Competições</h2>
+    <div class="competitions-grid" id="competitionsGrid"></div>
+  </section>
+
+  <!-- RESUMOS -->
+  <section class="resumos-section">
+    <h2 class="section-title">Resumos</h2>
+    <div class="resumos-carousel" id="resumosCarousel"></div>
+  </section>
+
+  <!-- TABELA -->
+  <section class="tabela-section">
+    <h2 class="section-title">Classificação</h2>
+    <div class="tabela-wrapper">
+      <table class="tabela" id="tabela">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Clube</th>
+            <th>P</th>
+            <th>J</th>
+            <th>V</th>
+            <th>E</th>
+            <th>D</th>
+            <th>GP</th>
+            <th>GC</th>
+            <th>SG</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="legenda">
+      <span class="legenda-item"><i class="dot azul"></i> Libertadrogues</span>
+      <span class="legenda-item"><i class="dot azul-claro"></i> Libertadrogues Repescagem</span>
+      <span class="legenda-item"><i class="dot prata"></i> Surdamericana</span>
+      <span class="legenda-item"><i class="dot vermelho"></i> DESCENSO</span>
+    </div>
+  </section>
+
+  <!-- SPONSORS -->
+  <section class="sponsors-section">
+    <h2 class="section-title">Patrocinadores Oficiais</h2>
+    <div class="sponsors-category">
+      <h3>Master</h3>
+      <div class="sponsors-row">
+        <img src="assets/images/sponsors/master1.png" alt="Sponsor">
+      </div>
+    </div>
+    <div class="sponsors-category">
+      <h3>Ouro</h3>
+      <div class="sponsors-row">
+        <img src="assets/images/sponsors/ouro1.png" alt="Sponsor">
+        <img src="assets/images/sponsors/ouro2.png" alt="Sponsor">
+      </div>
+    </div>
+    <div class="sponsors-category">
+      <h3>Prata</h3>
+      <div class="sponsors-row">
+        <img src="assets/images/sponsors/prata1.png" alt="Sponsor">
+        <img src="assets/images/sponsors/prata2.png" alt="Sponsor">
+        <img src="assets/images/sponsors/prata3.png" alt="Sponsor">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-col">
+      <h4>Idioma</h4>
+      <a href="index.html">Português</a>
+      <a href="es/Index.html">Español</a>
+      <a href="en/index.html">English</a>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="#">Home</a>
+      <a href="#">Vídeos</a>
+      <a href="#">Articles</a>
+      <a href="#">Fantasy L1</a>
+    </div>
+    <div class="footer-col">
+      <h4>Championship</h4>
+      <a href="#">Série A</a>
+      <a href="#">Série B</a>
+      <a href="#">Série C</a>
+      <a href="#">Série D</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Termos de uso</a>
+      <a href="#">Política de privacidade</a>
+      <a href="#">Cookies</a>
+    </div>
+    <div class="footer-clubes" id="footerClubes"></div>
+    <div class="footer-bottom">
+      <p>© 2026 Brasileirão eSports Série A. Todos os direitos reservados.</p>
+      <p class="powered">Powered By <img src="assets/images/uyt.png" alt="UYT"></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
