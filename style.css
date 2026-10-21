@@ -535,4 +535,4 @@ section { padding: 40px 20px; }
 @media (max-width: 480px) {
   .footer { grid-template-columns: 1fr; }
   .news-extra img { width: 90px; }
-  }
+           }
