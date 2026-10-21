@@ -53,10 +53,12 @@ function fecharMenu() {
   sideMenu.classList.remove('open');
   menuOverlay.classList.remove('open');
 }
+
 function toggleMenu() {
   sideMenu.classList.toggle('open');
   menuOverlay.classList.toggle('open');
 }
+
 menuToggle.addEventListener('click', toggleMenu);
 menuOverlay.addEventListener('click', fecharMenu);
 
@@ -75,6 +77,7 @@ function renderCarruselLiga(clubes) {
 function renderNoticias(dados) {
   const main = document.getElementById('newsMain');
   const p = dados.principal;
+
   main.innerHTML = `
     <a href="${p.link}">
       <img src="${p.imagem}" alt="${p.titulo}">
@@ -127,9 +130,11 @@ function renderResumos(lista) {
 
 function renderTabela(lista) {
   const tbody = document.querySelector('#tabela tbody');
+
   tbody.innerHTML = lista.map(t => {
     const saldo = t.golsPro - t.golsContra;
     const cls = classePosicao(t.posicao);
+
     return `
       <tr>
         <td><span class="pos ${cls}">${t.posicao}</span></td>
@@ -152,6 +157,7 @@ function renderTabela(lista) {
 
 function renderFooterClubes(clubes) {
   const container = document.getElementById('footerClubes');
+
   container.innerHTML = clubes.map(nome => `
     <a href="#" title="${nome}">
       <img src="${logoClube(nome)}" alt="${nome}" onerror="this.style.opacity=0.3">
